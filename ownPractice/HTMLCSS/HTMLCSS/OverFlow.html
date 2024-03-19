@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow Property</title>
+
+    <style>
+        .box{
+            width: 30vw;
+            height: 10vh;
+            border: 2px solid black;
+            /* overflow scroll is for when content is goes out of box then scroll bar can be in there */
+            overflow: scroll;
+            /* its for text in horizontal single line  not in a next line */
+            white-space: nowrap;
+
+            /* its is for when paragraph is overflow that time(...) is use to stop overflow of text r  */
+            /* text-overflow: ellipsis; */
+
+            overflow-x: scroll;
+            overflow-y: scroll;
+
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat amet qui, rerum debitis 
+        doloribus fuga eum earum laudantium, maiores, in enim assumenda. Repudiandae porro nemo, nam animi fugiat 
+        at distinctio.
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum molestias cum vel nesciunt, 
+        ad necessitatibus quos? Incidunt, magni id, voluptatum reiciendis omnis dolores necessitatibus
+         nobis quas alias ducimus sed totam.
+    </div>
+
+</body>
+</html>

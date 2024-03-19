@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        :root{  /*this is use for to set the global variable if you want to use same color in page then set this color in any varible and apply in that position you want to use if you want to change color then you change just color of globle varible it apply to entire page where you use that varible not just color another properties is also set by using the global varible*/
+            --color:rgb(240, 141, 12);
+            --seccolor:rgb(241, 178, 96);
+        }
+
+        .nav{
+            padding: 20px;
+            margin: 30px;
+            background-color: var(--color);
+        }
+
+        ul{
+            display: flex;
+            background-color: gold;
+            width: 300px;
+        }
+        ul li{
+            list-style: none;
+            margin: 20px;
+            padding: 5px;
+            align-content: center;
+        }
+        .container{
+            padding: 5px;
+            margin: 30px;
+            background-color: var(--seccolor);
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>about</li>
+            <li>contact</li>
+        </ul>
+    </div>
+
+    <div class="container">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus et odio eum odit voluptates quod ipsam maxime excepturi, accusamus laudantium, corrupti error molestias incidunt doloremque iure cum, vero architecto nihil.
+    </div>
+</body>
+</html>

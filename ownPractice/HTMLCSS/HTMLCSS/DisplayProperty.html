@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Property</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+           /* display: inline; */ /*  if property is inline then padding margin height is cannot be updates */
+            /* display: inline-block;    if property is inline-block then padding margin height is can be updates */
+            /* display: flex;  only set the div or any in the  inline */
+            /* display: inline-flex;    
+            justify-content: center;  by using inline flex we can set content in centre */
+
+            /* display: grid;   by using grid we set the box in vertical up-down */
+            border: 2px solid rebeccapurple;
+            padding: 45px;
+            margin: 50px;
+            height: 50px;
+
+
+        }
+        .box1{
+            /* display: none;   display none is for cannot show box completely */
+            /* visibility: hidden; visibility-hidden is property for hide the box but maintain the box size */
+
+        }
+    </style>
+</head>
+<body>
+
+    <!-- https://developer.mozilla.org/en-US/docs/Web/CSS/display    is for diplay properties -->
+
+    <div class="box">this is first</div>
+    <div class="box box1">this is second</div>
+    <span>THis is span tag is inline tag</span>
+
+</body>
+</html>

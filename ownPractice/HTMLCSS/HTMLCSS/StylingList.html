@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styling List</title>
+    <style>
+        nav ul li{
+            /* marker style change by using the list style */
+            list-style: devanagari;
+            /* to give the symbol to marker list */
+            list-style-type: "";
+            background: yellow;
+            /* group the marker and list item    marker means 1,2,3 list item mean actual content*/
+            list-style-position: outside;
+            border: 2px solid black;
+            /* you can set image to marker list */
+            /* list-style-image: url(pxfuel.jpg); */
+        }
+
+        nav ol li{
+            list-style: none;
+            /* inline-flex is for display list in horzontal line*/
+            display: inline-flex;
+            padding: 34px;
+        }
+    </style>
+</head>
+<body>
+    
+    <nav>
+
+        <ul>
+            <li>home</li>
+            <li>about</li>
+            <li>contact us</li>
+        </ul>
+
+
+        <ol>
+            <li>abc</li>
+            <li>xyz</li>
+            <li>mno</li>
+        </ol>
+        
+    </nav>
+</body>
+</html>

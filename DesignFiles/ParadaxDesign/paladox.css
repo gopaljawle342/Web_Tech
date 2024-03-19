@@ -1,0 +1,42 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+div{
+    width: 100%;
+    /* min-height: 100px; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section1{
+    height: 100vh;
+    width: 100%;
+    background-image: url(/ClassPractice/img/farm.jpg);
+}
+
+.section2{
+    height: 100vh;
+    width: 100%;
+    background-image: url(/ClassPractice/img/bicycle.jpg);
+}
+
+.section3{
+    height: 100vh;
+    width: 100%;
+    background-image: url(/ClassPractice/img/forest.jpg);
+}
+
+.section4{
+    height: 100vh;
+    width: 100%;
+    background-image: url(/ClassPractice/img/farmer2.jpg);
+}

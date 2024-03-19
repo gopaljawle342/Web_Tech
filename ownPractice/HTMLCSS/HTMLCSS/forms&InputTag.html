@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>This is HTML Form</h3>
+
+    <!--action = is for to store the form data in that file in backend whatever you use-->
+    <form action="Backend.php">
+
+        <!-- type - is for which type data you want 
+                name- is for in which file/location  data is store in backend-->
+        <div>
+        <label for="name">Name </label>
+             <input type="text" name="Myname" id="name">
+        </div>
+        <br>
+        <div>
+            Role: <input type="text" name="Myrole">
+        </div>
+        <br>
+        <div>
+            Email: <input type="email" name="myEmail" id="">
+        </div>
+        <br>
+        <div>
+            Date: <input type="date" name="MyDate" id="">
+        </div>
+        <br>
+
+        <div>
+            Bonus: <input type="number" name="MyBolnus" id="">
+        </div>
+        <br>
+
+        <br>
+        <div>
+            <!-- this is radio button -->
+            Are you eligible: <input type="checkbox" name="myEligible" id="">
+            <br>
+            <!-- checked if for to by defualt this will checked-->
+            Are you eligible: <input type="checkbox" name="myEligible" id="" checked>
+        </div>
+        
+        <br>
+        <div>
+            <!-- this is radio button -->
+            Gender:  Male<input type="radio" name="myGender" id="">Female <input type="radio" name="myGender" id="">
+            
+        </div>
+        <br>
+        <div>
+            write about yourself: <br>
+            <textarea name="myText" id="" cols="30" rows="10"></textarea>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="car">Car</label>
+            <select name="mycar" id="car">
+                <!--
+                    selected is for by default selected that content
+                -->
+                <option value="ind" selected>Indica</option>
+                <option value="sw">Swift</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <!-- this this for submit the form 
+             value-- means just like buttuon view text to user in browser-->
+            <input type="submit" value="Submit Now ">
+         </div>
+
+        <br>
+        <div>
+            <input type="reset" value="Reset Now">
+        </div>
+
+        <div>
+            <label for="Branch">Select your Branch</label>
+            <select name="BranchSelection" id="Branch">
+                <option value="choose" selected>choose Branch</option>
+                <option value="com">Computer</option>
+                <option value="etc">EXTC</option>
+                <option value="mech">MEch</option>
+            </select>
+        </div>
+
+
+
+    </form>
+
+</body>
+</html>

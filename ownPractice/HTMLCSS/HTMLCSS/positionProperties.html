@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Property</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+
+        }
+
+        .box{
+            width: 80vw;
+            height: 133px;
+            padding: 3px;
+            margin: 3px;
+            border: solid black 2px;
+        }
+        .box1{
+
+            /*Exception: transform ,filter, perspective property can also make an element as positioned  this property make a element as a positional element */
+            /* transform: translate(0);
+            filter: invert(0);
+            perspective: 0em; */
+
+
+            background-color: aqua;
+            position: sticky;    /* it for to stick the box upside when we scroll and below boxs are scroll down the that box */
+            top: 0px;
+
+
+            /* position: relative;
+            z-index: 1;   */                  /*for to stay box upside value rather than 0 if its 0 then box is down the another box */
+        }
+        .box2{
+            /* position: relative;         /* relative position for change the positon of box*/
+            /* top: 30px;                       its change the top position of box */
+          /* left: 35px; */ 
+            background-color: plum;
+        }
+        .box3{
+            background-color: azure;
+            position: fixed; /* for to fix the box in entire page if page is scrolble then it fixed position*/
+            top: 50px;
+            height: 100px;
+            width: 100px;
+        }
+        .box4{
+            background-color: blanchedalmond;
+        }
+
+
+        .box5{
+            background-color: khaki;
+            position: absolute;
+            top: 0px;     /* absolute position can be applied to  nearest position ancester mean nearest  positional parent ---> if parent class has a positional then its act to that element if parent class not a position then body element check if body is positional then act to body if body not positonal then it act to html element positional */
+
+            left: 30px;
+        }
+        .box6{
+            background-color: blueviolet;
+        }
+        .box7{
+            background-color: greenyellow;
+        }
+        .box8{
+            background-color: chocolate;
+        }
+
+        .parent{
+            padding: 30px;
+            margin: 30px;
+            border: 3px solid brown;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <div class="box box1"></div>
+    <div class="box box2"></div>
+    <div class="box box3"></div>
+    <div class="box box4"></div>
+
+    <div class="parent">
+        <div class="box box5"></div>
+        <div class="box box6"></div>
+        <div class="box box7"></div>
+        <div class="box box8"></div>
+    </div>
+    
+</body>
+</html>

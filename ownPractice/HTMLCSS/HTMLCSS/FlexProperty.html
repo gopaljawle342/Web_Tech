@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container{
+            border: 2px solid red;
+            display: flex;
+            height: 80vh;
+            justify-content: center; /* horizontally center*/
+            align-items: center;  /*Vertically center single line in center*/
+            /* flex-direction: column;  items in column */
+             flex-wrap: wrap;    /*  wrap the item in new line */
+             align-content: center;    /* multiple line in center */
+             gap: 30px;   /* this give gap between items */
+             row-gap: 40px;
+             column-gap: 30px;
+             gap: 40px 30p;
+
+             /* above all propertys for only container not item */
+        } 
+
+        .item{
+            flex-grow: 1; 
+            /* give same width to all items  */
+
+            height: 92px;
+            width: 92px;
+            border: 2px solid black;
+            /* margin: 4px; */
+            background-color: blueviolet;
+
+            .order-1{
+                order: 1;  
+                /* less order come starting  max order come eanding  */
+                /* default order 0 */
+            } 
+            .order-2{
+                order: 3;
+            }
+            .order-3{
+                order: 7;
+
+            }
+            
+        }
+
+        .item1{
+            flex-grow: 2;
+            /* it take 2 item length */
+            /* flex-shrink: 2; */
+            /* this property shrink the item more than normal shrink  at time of change in orintation*/
+            
+            /* align-self: self-end; */
+            /* this property for individiual items */
+        }
+
+
+    </style>
+
+</head>
+<body>
+    
+    <div class="container">
+
+        <div class="item order-1 item1">1</div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item order-2">2</div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+       
+       
+
+    </div>
+
+</body>
+</html>

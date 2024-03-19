@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 90vw;
+            height: 80vh;
+            background-color: aqua;
+            position: relative;
+        }
+        .box{
+            height: 100px;
+            width: 100px;
+            background-color: orangered;
+            display: flex;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            border-radius: 70px;
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            animation:  
+            rotatebox 3s linear infinite ,
+            roratebox1 1s ease-out  infinite alternate;
+            
+            
+        }
+        @keyframes rotatebox {
+            from{
+                left: 0;
+            }
+            to{
+                left: 100%;
+            }
+            
+        }
+        @keyframes roratebox1 {
+            from{
+                bottom: 0;
+                
+            }
+            to{
+               bottom: 80%;
+            }
+            
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="box">
+
+        </div>
+
+    </div>
+</body>
+</html>
